@@ -1,0 +1,236 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Tigre de Bengala",
+      "scientific_name": "Panthera tigris tigris",
+      "kingdom": "Animalia",
+      "order": "Carnívoro",
+      "species": [
+        1
+      ],
+      "locations": [
+        1,
+        2
+      ],
+      "description": "El tigre de Bengala es una de las subspecies de tigre más grandes y reconocibles.",
+      "image_url": "https://content.nationalgeographic.com.es/medio/2024/02/28/tigre-de-bengala_4d781c7a_240228150127_800x535.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Águila Real",
+      "scientific_name": "Aquila chrysaetos",
+      "kingdom": "Animalia",
+      "diet": "Carnívoro",
+      "species": [
+        2
+      ],
+      "locations": [
+        3
+      ],
+      "description": "Ave rapaz de gran tamaño con una envergadura impresionante.",
+      "image_url": "https://static.inaturalist.org/photos/168362446/medium.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Elefante Africano",
+      "scientific_name": "Loxodonta africana",
+      "kingdom": "Animalia",
+      "diet": "Herbívoro",
+      "species": [
+        3
+      ],
+      "locations": [
+        4,
+        5
+      ],
+      "description": "El elefante africano es el animal terrestre más grande del planeta.",
+      "image_url": "https://static.nationalgeographic.es/files/styles/image_3200/public/01-orphan-elephants-nationalgeographic_2188826.jpg?w=1600"
+    },
+    {
+      "id": 4,
+      "name": "Cocodrilo del Nilo",
+      "scientific_name": "Crocodylus niloticus",
+      "kingdom": "Animalia",
+      "diet": "Carnívoro",
+      "species": [
+        4
+      ],
+      "locations": [
+        6,
+        7
+      ],
+      "description": "Un reptil grande y peligroso que habita en ríos y lagos de África.",
+      "image_url": "https://www.bioparcfuengirola.es/wp-content/uploads/2024/04/COCODRILO-DEL-NILO5.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Oso Polar",
+      "scientific_name": "Ursus maritimus",
+      "kingdom": "Animalia",
+      "diet": "Carnívoro",
+      "species": [
+        5
+      ],
+      "locations": [
+        8
+      ],
+      "description": "El oso polar es un gran depredador adaptado a vivir en climas fríos.",
+      "image_url": "https://files.worldwildlife.org/wwfcmsprod/images/Polar_Bear_New_Hero_Image/hero_small/90x2m4x6df_polar_bear_hero.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Cobra Real",
+      "scientific_name": "Ophiophagus hannah",
+      "kingdom": "Animalia",
+      "diet": "Carnívoro",
+      "species": [
+        4
+      ],
+      "locations": [
+        1,
+        2,
+        7
+      ],
+      "description": "La serpiente venenosa más larga, capaz de levantar parte de su cuerpo.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Delfín Nariz de Botella",
+      "scientific_name": "Tursiops truncatus",
+      "kingdom": "Animalia",
+      "diet": "Carnívoro",
+      "species": [
+        5
+      ],
+      "locations": [
+        9
+      ],
+      "description": "Mamífero inteligente y social, con gran capacidad de comunicación.",
+      "image_url": "https://static.nationalgeographic.es/files/styles/image_3200/public/nationalgeographic2728138.webp?w=839&h=839"
+    },
+    {
+      "id": 8,
+      "name": "Rana Arborícola Verde",
+      "scientific_name": "Litoria caerulea",
+      "kingdom": "Animalia",
+      "diet": "Insectívoro",
+      "species": [
+        6
+      ],
+      "locations": [
+        6,
+        7
+      ],
+      "description": "Rana de colores vivos con habilidades para trepar y camuflarse.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Australia_green_tree_frog_%28Litoria_caerulea%29_crop.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Pez Payaso",
+      "scientific_name": "Amphiprioninae",
+      "kingdom": "Animalia",
+      "diet": "Omnívoro",
+      "species": [
+        7
+      ],
+      "locations": [
+        6,
+        9,
+        10
+      ],
+      "description": "Pez pequeño con colores brillantes que vive en simbiosis con anémonas.",
+      "image_url": "https://static.nationalgeographic.es/files/styles/image_3200/public/2284.600x450.jpg?w=1600"
+    },
+    {
+      "id": 10,
+      "name": "Lobo Gris",
+      "scientific_name": "Canis lupus",
+      "kingdom": "Animalia",
+      "diet": "Carnívoro",
+      "species": [
+        3
+      ],
+      "locations": [
+        2,
+        3,
+        5
+      ],
+      "description": "El lobo gris es un depredador altamente social que caza en manadas y se adapta a diversos entornos.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Canis_lupus_265b.jpg"
+    }
+  ],
+  "species": [
+    {
+      "id": 1,
+      "name": "Felinos"
+    },
+    {
+      "id": 2,
+      "name": "Aves Rapaces"
+    },
+    {
+      "id": 3,
+      "name": "Mamíferos Terrestres"
+    },
+    {
+      "id": 4,
+      "name": "Reptiles"
+    },
+    {
+      "id": 5,
+      "name": "Mamíferos Marinos"
+    },
+    {
+      "id": 6,
+      "name": "Anfibios"
+    },
+    {
+      "id": 7,
+      "name": "Peces"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Selvas tropicales"
+    },
+    {
+      "id": 2,
+      "name": "Bosques"
+    },
+    {
+      "id": 3,
+      "name": "Montañas"
+    },
+    {
+      "id": 4,
+      "name": "Sabanas africanas"
+    },
+    {
+      "id": 5,
+      "name": "Desiertos"
+    },
+    {
+      "id": 6,
+      "name": "Ríos"
+    },
+    {
+      "id": 7,
+      "name": "Pantanos"
+    },
+    {
+      "id": 8,
+      "name": "Regiones árticas"
+    },
+    {
+      "id": 9,
+      "name": "Océanos"
+    },
+    {
+      "id": 10,
+      "name": "Lagos"
+    }
+  ]
+}
