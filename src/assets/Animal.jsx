@@ -1,7 +1,6 @@
 import '../css/Animal.css';
 
 const Animal = ({species, locations, animal}) => {
-
     const showDescription = () => {
         return animal.description.length <= 100
             ? animal.description
