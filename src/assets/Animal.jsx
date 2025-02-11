@@ -1,15 +1,15 @@
 import '../css/Animal.css';
 
-const Animal = ({species, locations, animal}) => {
+const Animal = ({countries, locations, animal}) => {
     const showDescription = () => {
         return animal.description.length <= 100
             ? animal.description
             : animal.description.substring(0, 100) + '...';
     };
-    const getSpecie = () => {
-        const spe = species.find((specie) => specie.id === animal.id);
-        if (spe) {
-            return spe.name;
+    const getCountries = () => {
+        const cy = countries.find((country) => country.id === animal.id);
+        if (cy) {
+            return cy.name;
         } else {
             return "No clasificado";
         }
@@ -27,7 +27,7 @@ const Animal = ({species, locations, animal}) => {
             <h1>{animal.name}</h1>
             <img src={animal.image_url} alt={animal.name}/>
             <div className="animal-bottom">
-                <p><b>Especie: </b>{getSpecie()}</p>
+                <p><b>Pais: </b>{getCountries()}</p>
                 <p><b>Localizacion: </b>{getLocation()}</p>
                 <p><b>Descripcion: </b>{showDescription()}</p>
             </div>

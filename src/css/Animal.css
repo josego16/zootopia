@@ -3,6 +3,9 @@
     --secondary-color: #f4f4f4;
     --text-color: #333;
     --border-radius: 12px;
+    --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --transition-speed: 0.3s ease-in-out;
 }
 
 .animal-top {
@@ -12,46 +15,49 @@
     background: #fff;
     border: 1px solid #ddd;
     border-radius: var(--border-radius);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-light);
     font-family: 'Arial', sans-serif;
-    transition: transform 0.3s ease-in-out;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
 }
 
 .animal-top:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
+    box-shadow: var(--shadow-hover);
 }
 
 .animal-top h1 {
     text-align: center;
-    font-size: 26px;
+    font-size: 28px;
     color: var(--primary-color);
     margin-bottom: 12px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .animal-top img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    transition: opacity 0.3s ease-in-out;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: var(--border-radius);
+    transition: opacity var(--transition-speed), transform var(--transition-speed);
 }
 
 .animal-top img:hover {
-    opacity: 0.9;
+    opacity: 0.95;
+    transform: scale(1.02);
 }
 
 .animal-bottom {
-    text-align: left;
-    padding: 12px;
+    padding: 15px;
 }
 
 .animal-bottom p {
     text-align: justify;
-    font-size: 16px;
+    font-size: 17px;
     color: var(--text-color);
-    margin: 8px 0;
-    line-height: 1.6;
+    margin: 10px 0;
+    line-height: 1.7;
 }
 
 .animal-bottom b {
@@ -60,6 +66,6 @@
 
 .animal-bottom p:nth-child(even) {
     background: var(--secondary-color);
-    padding: 8px;
-    border-radius: 6px;
+    padding: 10px;
+    border-radius: var(--border-radius);
 }
