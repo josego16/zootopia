@@ -6,10 +6,12 @@
       "scientific_name": "Panthera tigris tigris",
       "kingdom": "Animalia",
       "order": "Carnívoro",
-      "species": [
-        1
-      ],
+      "species": "Felinos",
       "locations": [
+        1,
+        2
+      ],
+      "countries": [
         1,
         2
       ],
@@ -22,10 +24,11 @@
       "scientific_name": "Aquila chrysaetos",
       "kingdom": "Animalia",
       "diet": "Carnívoro",
-      "species": [
-        2
-      ],
+      "species": "Aves Rapaces",
       "locations": [
+        3
+      ],
+      "countries": [
         3
       ],
       "description": "Ave rapaz de gran tamaño con una envergadura impresionante.",
@@ -37,10 +40,12 @@
       "scientific_name": "Loxodonta africana",
       "kingdom": "Animalia",
       "diet": "Herbívoro",
-      "species": [
-        3
-      ],
+      "species": "Mamíferos Terrestres",
       "locations": [
+        4,
+        5
+      ],
+      "countries": [
         4,
         5
       ],
@@ -53,12 +58,14 @@
       "scientific_name": "Crocodylus niloticus",
       "kingdom": "Animalia",
       "diet": "Carnívoro",
-      "species": [
-        4
-      ],
+      "species": "Reptiles",
       "locations": [
         6,
         7
+      ],
+      "countries": [
+        4,
+        5
       ],
       "description": "Un reptil grande y peligroso que habita en ríos y lagos de África.",
       "image_url": "https://www.bioparcfuengirola.es/wp-content/uploads/2024/04/COCODRILO-DEL-NILO5.jpg"
@@ -69,12 +76,11 @@
       "scientific_name": "Ursus maritimus",
       "kingdom": "Animalia",
       "diet": "Carnívoro",
-      "species": [
-        5
-      ],
+      "species": "Mamíferos Terrestres",
       "locations": [
         8
       ],
+      "countries": [],
       "description": "El oso polar es un gran depredador adaptado a vivir en climas fríos.",
       "image_url": "https://files.worldwildlife.org/wwfcmsprod/images/Polar_Bear_New_Hero_Image/hero_small/90x2m4x6df_polar_bear_hero.jpg"
     },
@@ -84,13 +90,15 @@
       "scientific_name": "Ophiophagus hannah",
       "kingdom": "Animalia",
       "diet": "Carnívoro",
-      "species": [
-        4
-      ],
+      "species": "Reptiles",
       "locations": [
         1,
         2,
         7
+      ],
+      "countries": [
+        1,
+        2
       ],
       "description": "La serpiente venenosa más larga, capaz de levantar parte de su cuerpo.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg"
@@ -101,94 +109,30 @@
       "scientific_name": "Tursiops truncatus",
       "kingdom": "Animalia",
       "diet": "Carnívoro",
-      "species": [
-        5
-      ],
+      "species": "Mamíferos Marinos",
       "locations": [
         9
       ],
+      "countries": [],
       "description": "Mamífero inteligente y social, con gran capacidad de comunicación.",
       "image_url": "https://static.nationalgeographic.es/files/styles/image_3200/public/nationalgeographic2728138.webp?w=839&h=839"
     },
     {
-      "id": 8,
-      "name": "Rana Arborícola Verde",
-      "scientific_name": "Litoria caerulea",
-      "kingdom": "Animalia",
-      "diet": "Insectívoro",
-      "species": [
-        6
-      ],
-      "locations": [
-        6,
-        7
-      ],
-      "description": "Rana de colores vivos con habilidades para trepar y camuflarse.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Australia_green_tree_frog_%28Litoria_caerulea%29_crop.jpg"
-    },
-    {
-      "id": 9,
-      "name": "Pez Payaso",
-      "scientific_name": "Amphiprioninae",
-      "kingdom": "Animalia",
-      "diet": "Omnívoro",
-      "species": [
-        7
-      ],
-      "locations": [
-        6,
-        9,
-        10
-      ],
-      "description": "Pez pequeño con colores brillantes que vive en simbiosis con anémonas.",
-      "image_url": "https://static.nationalgeographic.es/files/styles/image_3200/public/2284.600x450.jpg?w=1600"
-    },
-    {
       "id": 10,
-      "name": "Lobo Gris",
-      "scientific_name": "Canis lupus",
+      "name": "Jaguar",
+      "scientific_name": "Panthera onca",
       "kingdom": "Animalia",
       "diet": "Carnívoro",
-      "species": [
-        3
-      ],
+      "species": "Felinos",
       "locations": [
-        2,
-        3,
-        5
+        1,
+        2
       ],
-      "description": "El lobo gris es un depredador altamente social que caza en manadas y se adapta a diversos entornos.",
-      "image_url": "https://static.nationalgeographicla.com/files/styles/image_3200/public/05_nationalgeographic_2711495.webp?w=839&h=839"
-    }
-  ],
-  "species": [
-    {
-      "id": 1,
-      "name": "Felinos"
-    },
-    {
-      "id": 2,
-      "name": "Aves Rapaces"
-    },
-    {
-      "id": 3,
-      "name": "Mamíferos Terrestres"
-    },
-    {
-      "id": 4,
-      "name": "Reptiles"
-    },
-    {
-      "id": 5,
-      "name": "Mamíferos Marinos"
-    },
-    {
-      "id": 6,
-      "name": "Anfibios"
-    },
-    {
-      "id": 7,
-      "name": "Peces"
+      "countries": [
+        6
+      ],
+      "description": "El jaguar es el felino más grande de América y un depredador ágil y fuerte.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Jaguar_%28Panthera_onca%29_female_Piquiri_River_2.jpg/800px-Jaguar_%28Panthera_onca%29_female_Piquiri_River_2.jpg"
     }
   ],
   "locations": [
@@ -231,6 +175,40 @@
     {
       "id": 10,
       "name": "Lagos"
+    }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "name": "India"
+    },
+    {
+      "id": 2,
+      "name": "Bangladesh"
+    },
+    {
+      "id": 3,
+      "name": "Estados Unidos"
+    },
+    {
+      "id": 4,
+      "name": "Sudáfrica"
+    },
+    {
+      "id": 5,
+      "name": "Kenia"
+    },
+    {
+      "id": 6,
+      "name": "Brasil"
+    },
+    {
+      "id": 7,
+      "name": "Australia"
+    },
+    {
+      "id": 8,
+      "name": "Canadá"
     }
   ]
 }
