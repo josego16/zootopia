@@ -31,6 +31,10 @@ function App() {
         downloadLocations();
     }, [animals]);
 
+    const onDeleteAnimal = (deleteAnimal) => {
+        const newAnimal = animals.filter((animal) => deleteAnimal !== animal);
+        setAnimals(newAnimal);
+    }
     return (
         <div className="App">
             <Header title="Zoologico Gomez"/>
@@ -41,7 +45,9 @@ function App() {
             <AnimalList countries={countries}
                         locations={locations}
                         animals={filteredAnimals.length > 0 || search ? filteredAnimals : animals}
-                        setAnimals={setAnimals}/>
+                        setAnimals={setAnimals}
+                        onDeleteAnimal={onDeleteAnimal}
+            />
         </div>
     )
 }

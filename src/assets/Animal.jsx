@@ -1,6 +1,7 @@
 import '../css/Animal.css';
+import Button from "./Button.jsx";
 
-const Animal = ({countries, locations, animal}) => {
+const Animal = ({countries, locations, animal, onDeleteAnimal}) => {
     const showDescription = () => {
         return animal.description.length <= 100
             ? animal.description
@@ -31,6 +32,7 @@ const Animal = ({countries, locations, animal}) => {
                 <p><b>Localizacion: </b>{getLocation()}</p>
                 <p><b>Descripcion: </b>{showDescription()}</p>
             </div>
+            <Button animal={animal} onDeleteAnimal={onDeleteAnimal}/>
         </div>
     );
 };
