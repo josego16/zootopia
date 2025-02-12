@@ -1,0 +1,61 @@
+.menu-container {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.menu-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.menu-item:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+.menu-checkbox {
+    margin-right: 8px;
+    accent-color: #007bff;
+    transform: scale(1.2);
+}
