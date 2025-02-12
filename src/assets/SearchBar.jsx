@@ -21,19 +21,14 @@ const SearchBar = ({search, setSearch, animals, setFilteredAnimals}) => {
         filterAnimals(newSearch);
     };
 
-    const handleSearch = () => {
-        filterAnimals(search);
-    };
-
     return (
         <div className="search-bar">
-            <input
+            <label>Buscar un animal:<input
                 type="text"
                 value={search}
                 onChange={handleInputChange}
                 placeholder="Escribe para buscar un animal"
-            />
-            <button onClick={handleSearch}>Buscar</button>
+            /></label>
         </div>
     );
 };

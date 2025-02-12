@@ -4,6 +4,8 @@ import {getCountries, getLocations} from "./api/Api.jsx";
 import Header from "./assets/Header.jsx";
 import AnimalList from "./assets/AnimalList.jsx";
 import SearchBar from "./assets/SearchBar.jsx";
+import MenuCountries from "./assets/MenuCountries.jsx";
+import MenuLocations from "./assets/MenuLocations.jsx";
 
 function App() {
     const [animals, setAnimals] = useState([]);
@@ -38,6 +40,8 @@ function App() {
     return (
         <div className="App">
             <Header title="Zoologico Gomez"/>
+            <MenuCountries countries={countries}/>
+            <MenuLocations locations={locations}/>
             <SearchBar search={search}
                        setSearch={setSearch}
                        animals={animals}
