@@ -7,9 +7,8 @@ const SearchBar = ({search, setSearch, animals, setFilteredAnimals}) => {
             return;
         }
 
-        const filtered = animals.filter(({name, description}) =>
-            (name && name.toLowerCase().includes(searchText.toLowerCase())) ||
-            (description && description.toLowerCase().includes(searchText.toLowerCase()))
+        const filtered = animals.filter(({name}) =>
+            (name && name.toLowerCase().includes(searchText.toLowerCase()))
         );
 
         setFilteredAnimals(filtered);
