@@ -1,7 +1,7 @@
 import '../css/Animal.css';
 import Button from "./Button.jsx";
 
-const Animal = ({countries, locations, animal, onDeleteAnimal}) => {
+const Animal = ({countries, locations, animal, onDeleteAnimal, onOpenModal}) => {
     const showDescription = () => {
         return animal.description.length <= 100
             ? animal.description
@@ -25,11 +25,13 @@ const Animal = ({countries, locations, animal, onDeleteAnimal}) => {
             return "No clasificado";
         }
     };
-
     return (
         <div className="animal-top">
             <h1>{animal.name}</h1>
-            <img src={animal.image_url} alt={animal.name}/>
+            <img src={animal.image_url}
+                 alt={animal.name}
+                 onClick={() => onOpenModal(animal)}
+            />
             <div className="animal-bottom">
                 <p><b>Pais: </b>{getCountries()}</p>
                 <p><b>Localización: </b>{getLocation()}</p>

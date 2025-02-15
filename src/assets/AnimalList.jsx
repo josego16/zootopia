@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import {getAnimals} from "../api/Api.jsx";
 import Animal from "./Animal.jsx";
 
-const AnimalList = ({countries, locations, animals, setAnimals, onDeleteAnimal}) => {
+const AnimalList = ({countries, locations, animals, setAnimals, onDeleteAnimal, onOpenModal}) => {
     const [serverError, setserverError] = useState({error: false, message: ""});
 
     const downloadAnimals = async () => {
@@ -25,7 +25,7 @@ const AnimalList = ({countries, locations, animals, setAnimals, onDeleteAnimal})
             {
                 animals.map(animal =>
                     <Animal key={animal.id} countries={countries} locations={locations} animal={animal}
-                            onDeleteAnimal={onDeleteAnimal}/>
+                            onDeleteAnimal={onDeleteAnimal} onOpenModal={onOpenModal}/>
                 )
             }
         </div>

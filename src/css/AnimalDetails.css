@@ -1,0 +1,96 @@
+.animal-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.animal-modal.open {
+    opacity: 1;
+}
+
+.animal-modal.closed {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.animal-modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    transition: transform 0.3s ease-out;
+}
+
+.animal-modal.open .animal-modal-content {
+    transform: scale(1);
+}
+
+.animal-modal.closed .animal-modal-content {
+    transform: scale(0.8);
+}
+
+.animal-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.animal-modal-close:hover {
+    background: #c0392b;
+}
+
+.animal-modal-close:focus {
+    outline: 3px solid #3498db;
+}
+
+.animal-modal img {
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: var(--border-radius);
+    transition: opacity var(--transition-speed), transform var(--transition-speed);
+}
+
+.animal-modal h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+    line-height: 1.3;
+}
+
+.animal-modal p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.animal-modal p:first-of-type {
+    margin-top: 0;
+}

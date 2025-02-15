@@ -6,14 +6,15 @@ import AnimalList from "./assets/AnimalList.jsx";
 import SearchBar from "./assets/SearchBar.jsx";
 import MenuCountries from "./assets/MenuCountries.jsx";
 import MenuLocations from "./assets/MenuLocations.jsx";
+import AnimalDetails from "./assets/AnimalDetails.jsx";
 
 function App() {
     const [animals, setAnimals] = useState([]);
     const [locations, setLocations] = useState([]);
     const [countries, setCountries] = useState([]);
-
     const [search, setSearch] = useState('');
     const [filteredAnimals, setFilteredAnimals] = useState([]);
+    const [selectedAnimal, setSelectedAnimal] = useState(null);
 
     const downloadCountries = async () => {
         const response = await getCountries();
@@ -51,7 +52,14 @@ function App() {
                         animals={filteredAnimals.length > 0 || search ? filteredAnimals : animals}
                         setAnimals={setAnimals}
                         onDeleteAnimal={onDeleteAnimal}
-            />
+                        onOpenModal={setSelectedAnimal}/>
+            {selectedAnimal ? (
+                <AnimalDetails animal={selectedAnimal}
+                               locations={locations}
+                               countries={countries}
+                               onClose={() => setSelectedAnimal(null)}/>
+            ) : null
+            }
         </div>
     )
 }
