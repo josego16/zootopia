@@ -1,14 +1,18 @@
-import '../css/Animal.css';
-import Button from "./Button.jsx";
+import '../../css/Animal.css';
+import React, {useContext} from 'react';
+import {Link} from "react-router-dom";
+import {AnimalContext} from "../../context/AnimalContext.jsx";
 
-const Animal = ({countries, locations, animal, onDeleteAnimal, onOpenModal}) => {
+const Animal = ({animal, onDelete}) => {
+    const {countries, locations} = useContext(AnimalContext);
+
     const showDescription = () => {
         return animal.description.length <= 100
             ? animal.description
             : animal.description.substring(0, 100) + '...';
     };
 
-    const getCountries = () => {
+    const showCountry = () => {
         const coun = countries.filter((country) => animal.countries.includes(country.id));
         if (coun) {
             return coun.map(country => country.name).join(', ');
@@ -17,7 +21,7 @@ const Animal = ({countries, locations, animal, onDeleteAnimal, onOpenModal}) => 
         }
     };
 
-    const getLocation = () => {
+    const showLocation = () => {
         const local = locations.filter((location) => animal.locations.includes(location.id));
         if (local) {
             return local.map(location => location.name).join(', ');
@@ -27,17 +31,16 @@ const Animal = ({countries, locations, animal, onDeleteAnimal, onOpenModal}) => 
     };
     return (
         <div className="animal-top">
-            <h1>{animal.name}</h1>
-            <img src={animal.image_url}
-                 alt={animal.name}
-                 onClick={() => onOpenModal(animal)}
-            />
+            <h1>
+                <Link to={`/animals/${animal.id}`}>{animal.name}</Link>
+            </h1>
+            <img src={animal.image_url} alt={animal.name}/>
             <div className="animal-bottom">
-                <p><b>Pais: </b>{getCountries()}</p>
-                <p><b>Localización: </b>{getLocation()}</p>
-                <p><b>Descripción: </b>{showDescription()}</p>
+                <p><b>Paises: </b>{showCountry()}</p>
+                <p><b>Habitats: </b>{showLocation()}</p>
+                <p><b>Descripcion: </b>{showDescription()}</p>
             </div>
-            <Button animal={animal} onDeleteAnimal={onDeleteAnimal}/>
+            <button className="button" onClick={() => onDelete(animal.id)}>borrar</button>
         </div>
     );
 };

@@ -1,6 +1,9 @@
 import '../css/SearchBar.css';
+import {useContext} from "react";
+import {AnimalContext} from "../context/AnimalContext.jsx";
 
-const SearchBar = ({search, setSearch, animals, setFilteredAnimals}) => {
+const SearchBar = ({search, setSearch, setFilteredAnimals}) => {
+    const {animals} = useContext(AnimalContext);
     const filterAnimals = (searchText) => {
         if (!searchText.trim()) {
             setFilteredAnimals(animals);
