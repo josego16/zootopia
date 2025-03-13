@@ -1,7 +1,7 @@
 {
   "animals": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Tigre de Bengala",
       "scientific_name": "Panthera tigris tigris",
       "kingdom": "Animalia",
@@ -19,7 +19,7 @@
       "image_url": "https://content.nationalgeographic.com.es/medio/2024/02/28/tigre-de-bengala_4d781c7a_240228150127_800x535.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Águila Real",
       "scientific_name": "Aquila chrysaetos",
       "kingdom": "Animalia",
@@ -35,7 +35,7 @@
       "image_url": "https://static.inaturalist.org/photos/168362446/medium.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Elefante Africano",
       "scientific_name": "Loxodonta africana",
       "kingdom": "Animalia",
@@ -53,7 +53,7 @@
       "image_url": "https://static.nationalgeographic.es/files/styles/image_3200/public/01-orphan-elephants-nationalgeographic_2188826.jpg?w=1600"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Cocodrilo del Nilo",
       "scientific_name": "Crocodylus niloticus",
       "kingdom": "Animalia",
@@ -71,7 +71,7 @@
       "image_url": "https://www.bioparcfuengirola.es/wp-content/uploads/2024/04/COCODRILO-DEL-NILO5.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Oso Polar",
       "scientific_name": "Ursus maritimus",
       "kingdom": "Animalia",
@@ -87,7 +87,7 @@
       "image_url": "https://files.worldwildlife.org/wwfcmsprod/images/Polar_Bear_New_Hero_Image/hero_small/90x2m4x6df_polar_bear_hero.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Cobra Real",
       "scientific_name": "Ophiophagus hannah",
       "kingdom": "Animalia",
@@ -106,7 +106,7 @@
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Delfín Nariz de Botella",
       "scientific_name": "Tursiops truncatus",
       "kingdom": "Animalia",
@@ -122,7 +122,7 @@
       "image_url": "https://static.nationalgeographic.es/files/styles/image_3200/public/nationalgeographic2728138.webp?w=839&h=839"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Jaguar",
       "scientific_name": "Panthera onca",
       "kingdom": "Animalia",

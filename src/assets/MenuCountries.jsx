@@ -1,9 +1,6 @@
 import '../css/Menus.css';
-import {useContext} from "react";
-import {AnimalContext} from "../context/AnimalContext.jsx";
 
-const MenuCountries = () => {
-    const {countries} = useContext(AnimalContext);
+const MenuCountries = ({countries}) => {
     return (
         <div className="menu-container">
             <p className="menu-title">Menú de Países</p>

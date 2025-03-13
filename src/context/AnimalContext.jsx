@@ -1,8 +1,6 @@
 import axios from 'axios';
 import {createContext, useState} from 'react';
 
-export const token_key = 'TOKEN';
-
 const AnimalContext = createContext();
 
 const AnimalProvider = ({children}) => {

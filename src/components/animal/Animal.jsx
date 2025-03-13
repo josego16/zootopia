@@ -1,4 +1,5 @@
 import '../../css/Animal.css';
+import '../../css/Button.css';
 import React, {useContext} from 'react';
 import {Link} from "react-router-dom";
 import {AnimalContext} from "../../context/AnimalContext.jsx";
@@ -36,8 +37,8 @@ const Animal = ({animal, onDelete}) => {
             </h1>
             <img src={animal.image_url} alt={animal.name}/>
             <div className="animal-bottom">
-                <p><b>Paises: </b>{showCountry()}</p>
-                <p><b>Habitats: </b>{showLocation()}</p>
+                <p><b>Paises: </b>{animal.countries ? showCountry() : 'No encontrado'}</p>
+                <p><b>Habitats: </b>{animal.locations ? showLocation() : 'No encontrado'}</p>
                 <p><b>Descripcion: </b>{showDescription()}</p>
             </div>
             <button className="button" onClick={() => onDelete(animal.id)}>borrar</button>

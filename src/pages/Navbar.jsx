@@ -1,12 +1,13 @@
 import React from 'react';
 import {NavLink, Outlet} from "react-router-dom";
+import Header from "../assets/Header.jsx";
 
 const Navbar = () => {
     return (
         <div>
             <header>
-                <h1>National Geographic</h1>
-                <nav>
+                <Header title="National Geographic"/>
+                <nav style={{marginTop: "30px"}}>
                     <NavLink style={{marginRight: "10px"}} to="/">Home</NavLink>
                     <NavLink style={{marginRight: "10px"}} to="/animals">Animales</NavLink>
                     <NavLink style={{marginRight: "10px"}} to="/form">Formulario</NavLink>

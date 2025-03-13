@@ -7,7 +7,7 @@ const AnimalForm = () => {
         name: '',
         scientific_name: '',
         kingdom: '',
-        order: '',
+        diet: '',
         species: '',
         countries: '',
         locations: '',
@@ -59,9 +59,9 @@ const AnimalForm = () => {
                        value={animal.kingdom} onChange={handlechange}/>
             </div>
             <div style={{padding: '10px', border: "1px solid black", margin: "10px"}}>
-                <label htmlFor="order">Alimentacion: </label>
+                <label htmlFor="diet">Alimentacion: </label>
                 <input type="text"
-                       name="order" id="order"
+                       name="diet" id="diet"
                        value={animal.diet} onChange={handlechange}/>
             </div>
             <div style={{padding: '10px', border: "1px solid black", margin: "10px"}}>

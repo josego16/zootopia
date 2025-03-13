@@ -1,9 +1,6 @@
 import '../css/Menus.css';
-import {useContext} from "react";
-import {AnimalContext} from "../context/AnimalContext.jsx";
 
-const MenuLocations = () => {
-    const {locations} = useContext(AnimalContext);
+const MenuLocations = ({locations}) => {
     return (
         <div className="menu-container">
             <p className="menu-title">Menú de Hábitats</p>
