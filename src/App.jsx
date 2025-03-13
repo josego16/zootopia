@@ -8,26 +8,38 @@ import AnimalDetail from "./components/animal/AnimalDetails.jsx";
 import AnimalForm from "./components/form/AnimalForm.jsx";
 import About from "./pages/About.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import {AuthProvider} from "./context/AuthContext.jsx";
+import Login from "./components/auth/Login.jsx";
+import Register from "./components/auth/Register.jsx";
+import ProtectedRoute from "./components/auth/ProtectedRoute.jsx";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/", element: <Navbar/>,
             children: [
-                {index: true, element: <Home/>},
-                //{path: "/home", element: <Home/>},
-                {path: "/animals", element: <AnimalList/>},
-                {path: "/animals/:id", element: <AnimalDetail/>},
-                {path: "/form", element: <AnimalForm/>},
+                {index: true, element: <Login/>},
+                {path: "/register", element: <Register/>},
+                {
+                    element: <ProtectedRoute/>,
+                    children: [
+                        {path: "/home", element: <Home/>},
+                        {path: "/animals", element: <AnimalList/>},
+                        {path: "/animals/:id", element: <AnimalDetail/>},
+                        {path: "/form", element: <AnimalForm/>},
+                    ]
+                },
                 {path: "/about", element: <About/>},
                 {path: "/*", element: <NotFound/>},
             ]
         }
     ])
     return (
-        <AnimalProvider value={router}>
-            <RouterProvider router={router}/>
-        </AnimalProvider>
+        <AuthProvider>
+            <AnimalProvider value={router}>
+                <RouterProvider router={router}/>
+            </AnimalProvider>
+        </AuthProvider>
     )
 }
 

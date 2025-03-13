@@ -1,5 +1,11 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "josema@gmail.com",
+      "password": "$2a$10$OpVsFT3wMlms9..mCMDhEuU.NuyUrnt//WscSAd4Lrf7Flsj.Y3XW",
+      "id": 1
+    }
+  ],
   "animals": [
     {
       "id": "1",
