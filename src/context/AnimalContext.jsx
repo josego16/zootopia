@@ -37,8 +37,7 @@ const AnimalProvider = ({children}) => {
             {
                 animals, countries, locations, setAnimals,
                 getAnimals, getCountries, getLocations,
-                postAnimal,
-                deleteAnimal
+                postAnimal, deleteAnimal
             }
         }>
             {children}

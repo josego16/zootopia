@@ -5,7 +5,7 @@ import '../../css/Modal.css';
 
 const AnimalDetail = () => {
     const {id} = useParams();
-    const {animals} = useContext(AnimalContext);
+    const {animals, countries, locations} = useContext(AnimalContext);
     const navigate = useNavigate();
 
     const handleClose = () => {
@@ -17,6 +17,24 @@ const AnimalDetail = () => {
     if (!animal) {
         return <p>Cargando animales...</p>;
     }
+
+    const showCountry = () => {
+        const coun = countries.filter((country) => animal.countries.includes(country.id));
+        if (coun) {
+            return coun.map(country => country.name).join(', ');
+        } else {
+            return "No clasificado";
+        }
+    };
+
+    const showLocation = () => {
+        const local = locations.filter((location) => animal.locations.includes(location.id));
+        if (local) {
+            return local.map(location => location.name).join(', ');
+        } else {
+            return "No clasificado";
+        }
+    };
     return (
         <div className="modal-backdrop" onClick={(event) => event.stopPropagation()}>
             <div className="modal-content" onClick={(event) => event.stopPropagation()}>
@@ -32,8 +50,8 @@ const AnimalDetail = () => {
                         <p><b>Reino animal:</b> {animal.kingdom}</p>
                         <p><b>Alimentación:</b> {animal.diet}</p>
                         <p><b>Especie:</b> {animal.species}</p>
-                        <p><b>País/Paises:</b> {animal.countries}</p>
-                        <p><b>Habitat/Habitats:</b> {animal.locations}</p>
+                        <p><b>País/Paises:</b> {animal.countries ? showCountry() : 'No encontrado'}</p>
+                        <p><b>Habitat/Habitats:</b> {animal.locations ? showLocation() : 'No encontrado'}</p>
                         <p><b>Descripción:</b> {animal.description}</p>
                     </div>
                 </div>
