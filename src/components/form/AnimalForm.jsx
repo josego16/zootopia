@@ -95,7 +95,7 @@ const AnimalForm = () => {
                        value={animal.image_url} onChange={handlechange}/>
             </div>
             <p style={{margin: "10px", padding: "10px", fontSize: "20px", color: "red"}}>{errorMessage}</p>
-            <button type="submit" style={{padding: '10px', margin: "10px"}}>enviar</button>
+            <button className="button" type="submit" style={{padding: '10px', margin: "10px"}}>enviar</button>
         </form>
     );
 };
