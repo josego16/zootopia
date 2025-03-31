@@ -1,51 +1,49 @@
-<h1 align="center" id="title">Zootopia</h1>
+<h1 align="center" id="title">zootopia</h1>
 
-<p align="center"><img src="https://socialify.git.ci/josego16/zootopia/image?language=1&amp;owner=1&amp;name=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+<p align="center"><img src="https://socialify.git.ci/josego16/zootopia/image?font=Source+Code+Pro&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Brick+Wall&amp;stargazers=1&amp;theme=Auto" alt="project-image"></p>
 
-<p id="description">Este es un proyecto con fines educativos sobre los animales y sus caracteristicas.</p>
+<p id="description">Pagina web SPA creada sobre la fauna animal realizado en React con javascript html y css.</p>
 
   
   
-<h2>🧐 Features</h2>
+<h2>🧐 Caracteristicas Principales</h2>
 
-Here're some of the project's best features:
+Aqui tienes algunas de las caracteristicas basicas.
 
-*   Barra de busueda para encontrar un animal por su nombre
-*   menus para filtrar animales por pais o habitats
-*   detalles del animal al pulsar su nombre
-*   formulario para añadir un nuevo animal
-*   login y registro usando jwt y tokens
-*   proteccion de rutas
+*   Login y Registro
+*   Lista de los animales
+*   Formulario para realizar operaciones CRUD
+*   Menus checkbox para filtrar por pais o habitat
+*   Ver detalles de cada animal
 
-<h2>🛠️ Installation Steps:</h2>
+<h2>🛠️ Instrucciones de instalacion:</h2>
 
-<p>1. ejecutar el proyecto</p>
-
-```
-npm run dev
-```
-
-<p>2. instalar dependencias</p>
-
-```
-npm install 
-```
-
-<p>3. clonar repositorio</p>
+<p>1. Clonacion del proyecto</p>
 
 ```
 git clone https://github.com/josego16/zootopia.git
 ```
 
+<p>2. Instalar dependecias</p>
+
+```
+npm install
+```
+
+<p>3. Inicia el proyecto en modo desarrollo</p>
+
+```
+npm run dev
+```
+
   
   
-<h2>💻 Built with</h2>
+<h2>💻 Tecnologias</h2>
 
-Technologies used in the project:
+Estas son las tecnologias usadas en el proyecto
 
-*   Visual Studio Code
-*   Terminal
-*   javascript
 *   React
+*   React-router-dom
+*   Html
 *   CSS
-*   HTML
+*   Javascript
