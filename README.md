@@ -4,8 +4,6 @@
 
 <p id="description">Pagina web SPA creada sobre la fauna animal realizado en React con javascript html y css.</p>
 
-  
-  
 <h2>🧐 Caracteristicas Principales</h2>
 
 Aqui tienes algunas de las caracteristicas basicas.
@@ -15,6 +13,47 @@ Aqui tienes algunas de las caracteristicas basicas.
 *   Formulario para realizar operaciones CRUD
 *   Menus checkbox para filtrar por pais o habitat
 *   Ver detalles de cada animal
+
+<h2>💻 Tecnologias</h2>
+
+Estas son las tecnologias usadas en el proyecto
+
+*   React
+*   React-router-dom
+*   Html
+*   CSS
+*   Javascript
+
+<h2>Rutas del proyecto</h2>
+
+Realizar login de un usuario.
+```
+/
+```
+Realizar registro de un usuario.
+```
+/register
+```
+Pagina principal de la web.
+```
+/home
+```
+Lista de todos los animales.
+```
+/animals
+```
+Ver un animal por su id.
+```
+/animals/:id
+```
+Agregar un nuevo animal
+```
+/form
+```
+Informacion de contacto
+```
+/about
+```
 
 <h2>🛠️ Instrucciones de instalacion:</h2>
 
@@ -35,15 +74,3 @@ npm install
 ```
 npm run dev
 ```
-
-  
-  
-<h2>💻 Tecnologias</h2>
-
-Estas son las tecnologias usadas en el proyecto
-
-*   React
-*   React-router-dom
-*   Html
-*   CSS
-*   Javascript
