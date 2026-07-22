@@ -1,36 +1,18 @@
-import axios from 'axios';
 import {createContext, useState} from 'react';
 
 const AnimalContext = createContext();
 
 const AnimalProvider = ({children}) => {
     const [animals, setAnimals] = useState([]);
-    const [countries, setCountries] = useState([]);
-    const [locations, setLocations] = useState([]);
+    const [countries] = useState([]);
+    const [locations] = useState([]);
 
-    const getAnimals = async () => {
-        const response = await axios.get('http://localhost:3000/animals');
-        setAnimals(response.data);
-    };
-    const getCountries = async () => {
-        const response = await axios.get('http://localhost:3000/countries');
-        setCountries(response.data);
-    }
-    const getLocations = async () => {
-        const response = await axios.get('http://localhost:3000/locations');
-        setLocations(response.data);
-    }
-
-    const postAnimal = async (animal) => {
-        const response = await axios.post('http://localhost:3000/animals', animal);
-        await getAnimals();
-        return response;
-    };
-
-    const deleteAnimal = async (id) => {
-        await axios.delete(`http://localhost:3000/animals/${id}`);
-        await getAnimals();
-    };
+    // TODO: Reemplazar con @tanstack/react-query + iNaturalist API durante SDD
+    const getAnimals = async () => { /* stub */ };
+    const getCountries = async () => { /* stub */ };
+    const getLocations = async () => { /* stub */ };
+    const postAnimal = async () => { /* stub */ };
+    const deleteAnimal = async () => { /* stub */ };
 
     return (
         <AnimalContext.Provider value={
